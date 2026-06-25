@@ -37,14 +37,18 @@ Only the standard *One Dark Pro* ships italics (comments, parameters, `super`/`t
 
 ### From the Zed extension registry
 
-Open the command palette → `zed: extensions`, search for **One Dark Pro**, and click Install. Then `theme selector: toggle` and pick any of the five variants.
+Open the command palette → `zed: extensions`, search for **One Dark Pro Full**, and click Install. Then `theme selector: toggle` and pick any of the five variants. To auto-install on every device, add this to `settings.json` (and sync it):
+
+```json
+"auto_install_extensions": { "one-dark-pro-full-theme": true }
+```
 
 ### As a dev extension (local)
 
 Clone this repo, then in Zed run `zed: install dev extension` and select the cloned folder. Zed compiles and loads it immediately; changes to `themes/one-dark-pro.json` hot-reload.
 
 ```bash
-git clone https://github.com/Alivers/zed-one-dark-pro
+git clone https://github.com/Alivers/one-dark-pro-full-theme
 ```
 
 ## Credits & License
