@@ -1,6 +1,6 @@
 id = "one-dark-pro"
 name = "One Dark Pro"
-version = "0.2.0"
+version = "0.3.0"
 schema_version = 1
 authors = ["Aliver <aliver.len@outlook.com>"]
 description = "A faithful Zed port of Binaryify's VS Code One Dark Pro theme — all 5 variants, colors extracted from upstream."
