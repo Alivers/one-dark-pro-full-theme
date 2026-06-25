@@ -6,24 +6,31 @@ Zed ships a built-in *One Dark*, but it uses a muted, greyed-out palette (`#3b41
 
 ## Variants
 
-| Theme | Editor background |
-|---|---|
-| **One Dark Pro** | `#282c34` |
-| **One Dark Pro Darker** | `#21252b` (darker chrome and editor) |
+All five official variants are ported, with each variant's exact backgrounds, cursor, and italic settings taken from the upstream VS Code theme files:
+
+| Theme | Editor bg | Chrome | Notes |
+|---|---|---|---|
+| **One Dark Pro** | `#282c34` | `#21252b` | the original; italic comments & params |
+| **One Dark Pro Darker** | `#23272e` | `#1e2227` | dimmer, italics off |
+| **One Dark Pro Flat** | `#282c34` | `#282c34` | uniform background, white cursor, italics off |
+| **One Dark Pro Mix** | `#282c34` | `#21252b` | flat editor + darker activity/title bar |
+| **One Dark Pro Night Flat** | `#16191d` | `#16191d` | darkest, flat, italics off |
+
+Only the standard *One Dark Pro* ships italics (comments, parameters, `super`/`this`, markdown emphasis) — exactly as upstream does.
 
 ## Palette
 
 | Role | Color | |
 |---|---|---|
-| Foreground | `#abb2bf` | mono |
-| Comments *(italic)* | `#5c6370` | mono-3 |
+| Foreground / operators / punctuation | `#abb2bf` | mono |
+| Comments | `#7f848e` | mono (italic in standard) |
 | Keywords / storage | `#c678dd` | purple |
 | Functions / methods | `#61afef` | blue |
-| Strings | `#98c379` | green |
-| Variables / tags / properties | `#e06c75` | red |
-| Numbers / constants / attributes | `#d19a66` | orange |
-| Classes / types | `#e5c07b` | yellow |
-| Operators / escapes / regex | `#56b6c2` | cyan |
+| Strings / regex literals | `#98c379` / `#e06c75` | green / red |
+| Variables / tags / properties / headings | `#e06c75` | red |
+| Numbers / constants / booleans / attributes | `#d19a66` | orange |
+| Classes / types / `this` / namespaces | `#e5c07b` | yellow |
+| Escapes / operators-special / enum members | `#56b6c2` | cyan |
 | Cursor / accent | `#528bff` | blue |
 
 ## Install

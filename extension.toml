@@ -1,6 +1,6 @@
 id = "one-dark-pro"
 name = "One Dark Pro"
-version = "0.1.0"
+version = "0.2.0"
 schema_version = 1
 authors = ["Aliver <aliver.len@outlook.com>"]
 description = "A faithful Zed port of the popular VS Code One Dark Pro theme — vivid Atom One Dark palette with italic comments."
