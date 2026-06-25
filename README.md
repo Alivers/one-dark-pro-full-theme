@@ -1,6 +1,6 @@
 # One Dark Pro for Zed
 
-A faithful [Zed](https://zed.dev) port of the popular VS Code theme [**One Dark Pro**](https://github.com/Binaryify/OneDark-Pro) by Binaryify. All colors are extracted directly from the upstream theme JSON files, not approximated.
+A faithful [Zed](https://zed.dev) port of the popular VS Code theme [**One Dark Pro**](https://github.com/Binaryify/OneDark-Pro) by Binaryify. The palette is taken from the upstream theme files rather than approximated by eye, then mapped onto Zed's theme schema.
 
 Zed ships a built-in *One Dark*, but it uses a muted, greyed-out palette (`#3b414d` background, desaturated `#74ade8` blue). This extension restores the real One Dark Pro look: the deep `#282c34` editor background and the vivid One Dark Pro hues, plus italic comments on the standard variant.
 
@@ -16,7 +16,7 @@ All five official variants are ported, with each variant's exact backgrounds, cu
 | **One Dark Pro Mix** | `#282c34` | `#21252b` | flat editor + darker activity/title bar |
 | **One Dark Pro Night Flat** | `#16191d` | `#16191d` | darkest, flat, italics off |
 
-Only the standard *One Dark Pro* ships italics (comments, parameters, `super`/`this`, markdown emphasis) — exactly as upstream does.
+Following upstream, only the standard *One Dark Pro* italicizes source syntax — comments, parameters, `super`/`this`, and markdown emphasis; the other four ship italic-free. (Inlay hints and inline edit-predictions render italic in every variant — a small port-specific touch, so hints read as annotations rather than code.)
 
 ## Palette
 
@@ -28,9 +28,9 @@ Only the standard *One Dark Pro* ships italics (comments, parameters, `super`/`t
 | Functions / methods | `#61afef` | blue |
 | Strings / regex literals | `#98c379` / `#e06c75` | green / red |
 | Variables / tags / properties / headings | `#e06c75` | red |
-| Numbers / constants / booleans / attributes | `#d19a66` | orange |
-| Classes / types / `this` / namespaces | `#e5c07b` | yellow |
-| Escapes / operators-special / enum members | `#56b6c2` | cyan |
+| Numbers / booleans / attributes | `#d19a66` | orange |
+| Classes / types / named constants / `this` / namespaces | `#e5c07b` | yellow |
+| Escapes / special strings / enum members | `#56b6c2` | cyan |
 | Cursor / accent | `#528bff` | blue |
 
 ## Install
@@ -66,7 +66,7 @@ Select a variant and turn on the inlay-hint background box (the grey box behind 
 
 Notes:
 
-- Inlay hints render in faint italic grey (`#636d83`) on a `#2c313c` box, matching the One Dark Pro look. Zed styles hints from the theme's `syntax.hint` (`color` / `background_color` / `font_style` / `font_weight`); it has no per-hint font-family or font-size setting.
+- Inlay hints render in faint italic grey (`#636d83`) on a `#2c313c` box (the upstream hint-background color) — slightly dimmer and more italic than upstream by design, so they read as annotations rather than code. Zed styles hints from the theme's `syntax.hint` (`color` / `background_color` / `font_style` / `font_weight`); it has no per-hint font-family or font-size setting.
 - Swap `dark` for any of the five variant names to taste.
 
 ## Credits & License
