@@ -1,8 +1,8 @@
 # One Dark Pro for Zed
 
-A faithful [Zed](https://zed.dev) port of the popular VS Code [**One Dark Pro**](https://github.com/Atom/one-dark-syntax) theme.
+A faithful [Zed](https://zed.dev) port of the popular VS Code theme [**One Dark Pro**](https://github.com/Binaryify/OneDark-Pro) by Binaryify. All colors are extracted directly from the upstream theme JSON files, not approximated.
 
-Zed ships a built-in *One Dark*, but it uses a muted, greyed-out palette (`#3b414d` background, desaturated `#74ade8` blue). This extension restores the original One Dark Pro look: the deep `#282c34` editor background and the vivid Atom One Dark hues, plus italic comments.
+Zed ships a built-in *One Dark*, but it uses a muted, greyed-out palette (`#3b414d` background, desaturated `#74ade8` blue). This extension restores the real One Dark Pro look: the deep `#282c34` editor background and the vivid One Dark Pro hues, plus italic comments on the standard variant.
 
 ## Variants
 
@@ -37,7 +37,7 @@ Only the standard *One Dark Pro* ships italics (comments, parameters, `super`/`t
 
 ### From the Zed extension registry
 
-Open the command palette → `zed: extensions`, search for **One Dark Pro**, and click Install. Then `theme selector: toggle` and pick *One Dark Pro* or *One Dark Pro Darker*.
+Open the command palette → `zed: extensions`, search for **One Dark Pro**, and click Install. Then `theme selector: toggle` and pick any of the five variants.
 
 ### As a dev extension (local)
 
@@ -47,6 +47,6 @@ Clone this repo, then in Zed run `zed: install dev extension` and select the clo
 git clone https://github.com/Alivers/zed-one-dark-pro
 ```
 
-## License
+## Credits & License
 
-MIT. Theme colors derive from Atom's One Dark, MIT-licensed by GitHub.
+Color values are ported from [Binaryify/OneDark-Pro](https://github.com/Binaryify/OneDark-Pro) (MIT), which itself builds on Atom's One Dark syntax. This Zed port is MIT-licensed; all credit for the original theme design goes to its authors.
