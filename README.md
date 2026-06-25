@@ -51,6 +51,28 @@ Clone this repo, then in Zed run `zed: install dev extension` and select the clo
 git clone https://github.com/Alivers/one-dark-pro-full-theme
 ```
 
+## Recommended settings
+
+Select a variant and turn on the inlay-hint background box (the grey box behind type/parameter hints, like VS Code). The box color ships with the theme (`hint.background`), but Zed only renders it when `show_background` is enabled — it's off by default.
+
+```json
+{
+  "theme": {
+    "mode": "dark",
+    "dark": "One Dark Pro Night Flat"
+  },
+  "inlay_hints": {
+    "enabled": true,
+    "show_background": true
+  }
+}
+```
+
+Notes:
+
+- Inlay hints render in faint italic grey (`#636d83`) on a `#2c313c` box, matching the One Dark Pro look. Zed styles hints from the theme's `syntax.hint` (`color` / `background_color` / `font_style` / `font_weight`); it has no per-hint font-family or font-size setting.
+- Swap `dark` for any of the five variant names to taste.
+
 ## Credits & License
 
 Color values are ported from [Binaryify/OneDark-Pro](https://github.com/Binaryify/OneDark-Pro) (MIT), which itself builds on Atom's One Dark syntax. This Zed port is MIT-licensed; all credit for the original theme design goes to its authors.
